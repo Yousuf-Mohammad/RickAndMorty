@@ -1,10 +1,69 @@
+@font-face {
+  font-family: myFont;
+  src: url('./utils/TTTravels-Black.ttf');
+}
+
 .App {
   text-align: center;
+  background-color: #191D29;
+  font-family: myFont;
+
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.top {
+  background-image: url('./utils/Background.png');
+  background-position: center;
+  height: 790px;
+  padding: 58px;
+}
+
+.whiteHeading {
+  color: white;
+  font-size: 128px;
+}
+
+.gradientHeading {
+  background: -webkit-linear-gradient(right, #15BFFD, #9DFE00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 128px;
+
+
+}
+
+.button {
+  padding: 5px;
+  width: 210px;
+  height: 60px;
+  border-radius: 20px;
+  color: white;
+
+  background: -webkit-linear-gradient(left, #15BFFD, #1082ac, #9dff00c2);
+
+
+  position: absolute;
+  left: 640px;
+  bottom: 420px;
+}
+
+.paragraph {
+  font-family: myFont;
+  color: #14D9E5;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  width: 360px;
+  text-align: start;
+  position: absolute;
+  right: 650px;
+  bottom: 400px;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +91,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
