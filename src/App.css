@@ -7,6 +7,7 @@
   text-align: center;
   background-color: #191D29;
   font-family: myFont;
+  color: white;
 
 
 }
@@ -66,11 +67,19 @@
 }
 
 .charBox {
-  width: 300px;
+  width: 320px;
   background-color: #1082ac;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
+  height: auto;
+
+}
+
+.castPage {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
 }
 
 

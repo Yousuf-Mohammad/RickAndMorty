@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper";
 
@@ -15,7 +16,13 @@ const TheCast = () => {
 
 
     return (
-        <div style={{ marginTop: '-150px' }} >
+        <div style={{ marginTop: '-100px' }} >
+
+            <h1>Meet The Cast</h1>
+            <Link to={'/theCast'}>
+                <button> View all</button>
+            </Link>
+
             <Swiper
 
 

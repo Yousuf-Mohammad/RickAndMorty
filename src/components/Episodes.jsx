@@ -46,7 +46,8 @@ const Episodes = () => {
 
 
                     episodes.slice(0, 8).map(episode =>
-                        <SwiperSlide key={episode.id} className="Box">
+                        <SwiperSlide key={episode.id} className="charBox">
+                            <p>{episode.episode}</p>
 
                             <h1>{episode.name}</h1>
                         </SwiperSlide>)

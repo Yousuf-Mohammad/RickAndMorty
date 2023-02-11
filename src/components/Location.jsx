@@ -47,7 +47,7 @@ const Location = () => {
 
 
                     location.slice(0, 8).map(loc =>
-                        <SwiperSlide key={loc.id} className="Box">
+                        <SwiperSlide key={loc.id} className="charBox">
 
                             <h1>{loc.name}</h1>
                         </SwiperSlide>)

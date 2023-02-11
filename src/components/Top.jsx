@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../utils/Home page/Hero Elements/Logo.png'
 import rick from '../utils/Home page/Hero Elements/portal.png'
 import bubble from '../utils/Home page/Hero Elements/bubble.png'
@@ -9,7 +10,8 @@ import play from '../utils/Home page/Hero Elements/play-button-28245.png'
 const Top = () => {
     return (
         <div className='top' >
-            <img src={logo} height={48} width={227} alt="" />
+            <Link to={'/'} ><img src={logo} height={48} width={227} alt="" /></Link>
+
 
 
             <div>
@@ -18,8 +20,8 @@ const Top = () => {
                     style={{
                         position: 'absolute',
                         zIndex: '1',
-                        left: '350px',
-                        top: '90px'
+                        left: '340px',
+                        top: '40px'
                     }} alt="" />
                 <img src={gun}
                     width='320px'
@@ -36,10 +38,16 @@ const Top = () => {
                         position: 'absolute',
                         zIndex: '1',
                         right: '420px',
-                        top: '160px'
+                        top: '130px'
                     }} alt="" />
                 <p >
-                    <span className='whiteHeading'>THE</span> <img src={rick} alt="" /> <span className='gradientHeading'>RICK &</span></p>
+                    <span className='whiteHeading'>THE</span>
+                    <img src={rick} alt="" style={{
+                        margin: '10px',
+                        marginTop: '-90px',
+
+
+                    }} /> <span className='gradientHeading'>RICK &</span></p>
                 <p>
 
                     <span className='gradientHeading'>MORTY </span> <span className='whiteHeading'>WIKI</span></p>
