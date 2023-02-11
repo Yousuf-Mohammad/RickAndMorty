@@ -45,7 +45,9 @@ const Top = () => {
                     <span className='gradientHeading'>MORTY </span> <span className='whiteHeading'>WIKI</span></p>
 
             </div>
-            <button className='button'> <span><img src={play} width='30px' height='25px' alt="" /> Watch Now </span></button>
+            <a href="https://www.youtube.com/watch?v=KQ9Cgdsa9tc" className='button'><img src={play} width='30px' height='30px' style={{ marginTop: '5px' }} alt="" /> <span> Watch Now </span></a>
+
+
             <p className='paragraph'>Brilliant but boozy scientist Rick hijacks his fretful teenage grandson. Morty , for wild escapades in other world and alternate dimensions</p>
         </div >
 
