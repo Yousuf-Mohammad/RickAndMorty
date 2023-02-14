@@ -8,13 +8,9 @@
   background-color: #191D29;
   font-family: myFont;
   color: white;
+  overflow-x: hidden;
 
 
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .top {
@@ -23,6 +19,51 @@
   height: 790px;
   padding: 58px;
 }
+
+.topBubble {
+  position: absolute;
+  z-Index: 1;
+  left: 340px;
+  top: 40px;
+  width: 200px;
+}
+
+.topGun {
+  position: absolute;
+  z-index: 1;
+  right: 160px;
+  top: 200px;
+  width: 320px;
+}
+
+.topPill {
+  position: absolute;
+  z-index: 1;
+  right: 420px;
+  top: 130px;
+  width: 50px;
+}
+
+.topRick {
+  margin: 10px;
+  margin-top: -90px;
+}
+
+.episodes {
+  background-image: url('./utils/Spiral.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 58px;
+}
+
+.episodeHome {
+  background-image: url('./utils/Star.png');
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+
+
 
 .whiteHeading {
   color: white;
@@ -41,15 +82,21 @@
 .button {
   align-items: center;
   text-decoration: none;
-  padding: 2px;
+  padding: 10px;
   width: 210px;
   height: 50px;
   border-radius: 20px;
-  color: white;
+  border: .5px solid black;
   background: -webkit-linear-gradient(left, #15BFFD, #1082ac, #9dff00c2);
   position: absolute;
   left: 640px;
   bottom: 420px;
+}
+
+.watchNow {
+  text-align: center;
+  text-decoration: none;
+  color: white;
 }
 
 .paragraph {
@@ -66,52 +113,390 @@
 
 }
 
-.charBox {
-  width: 320px;
-  background-color: #1082ac;
+.viewAll {
+
+  position: absolute;
+  z-index: 1;
+  right: 130px;
+  bottom: 300px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #9DFE00;
+  border-radius: 5px;
   padding: 10px;
-  border-radius: 10px;
-  margin: 10px;
-  height: auto;
+  width: 116px;
+  height: 42px;
 
 }
+
+.castHome {
+  margin-top: -80px;
+
+}
+
+.meetText {
+  text-align: start;
+  padding-top: 50px;
+
+  margin-top: -260px;
+
+}
+
+
+.largeBox {
+  width: 280px;
+  height: 280px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(-45deg, #84F729, #15BFFD);
+  border-image-slice: 1;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0px;
+  text-decoration: none;
+  margin-bottom: 30px;
+
+}
+
+.swiper {
+  padding: 50px;
+
+}
+
+
+.imageBox {
+  width: 400px;
+  height: 400px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(135deg, #15BFFD, #84F729);
+  border-image-slice: 1;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  margin-bottom: 30px;
+
+
+}
+
+.charImage {
+  width: 250px;
+  height: 210px;
+}
+
+.charName {
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-left: 30px;
+  align-items: flex-start;
+  width: 259.28px;
+  height: 16px;
+}
+
+.smallBox {
+  width: 360px;
+  height: 130px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #84F729, #15BFFD);
+  border-image-slice: 1;
+  border-radius: 50em;
+  padding: 5px;
+
+
+}
+
+.smallerBox {
+  width: 360px;
+  height: 80px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #84F729, #15BFFD);
+  border-image-slice: 1;
+  border-radius: 50em;
+  padding: 5px;
+
+
+}
+
+.individualBox {
+  width: 240px;
+  height: 175px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(-45deg, #84F729, #15BFFD);
+  border-image-slice: 1;
+  border-radius: 50em;
+  padding: 20px;
+  text-align: start;
+
+}
+
+.individualLargeBox {
+  width: 800px;
+  height: 175px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(-45deg, #84F729, #15BFFD);
+  border-image-slice: 1;
+  border-radius: 50em;
+  padding: 25px;
+  text-align: start;
+
+}
+
+.episodeBox {
+  width: 800px;
+  height: 350px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(-45deg, #84F729, #15BFFD);
+  border-image-slice: 1;
+  padding: 35px;
+  text-align: start;
+  overflow: hidden;
+  overflow-y: scroll;
+
+}
+
+
+
 
 .castPage {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  padding: 100px;
+
+}
+
+.theCast {
+  background-image: url('./utils/Background2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.individualCast {
+  background-image: url('./utils/Background.png');
+  background-repeat: no-repeat;
+  background-position: top;
+
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px;
+
+}
+
+.row3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 10px;
 
 }
 
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  .App {
+    overflow-x: hidden;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .top {
+    height: 590px;
+    padding: 30px;
+    text-align: start;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
 
-  to {
-    transform: rotate(360deg);
+  .logo {
+    position: sticky;
+    z-index: 1;
+    margin-left: 15%;
+    top: 5px;
+    margin-bottom: 50px;
   }
+
+  .whiteHeading {
+
+    font-size: 35px;
+  }
+
+  .gradientHeading {
+
+    font-size: 35px;
+
+
+  }
+
+  .topRick {
+    width: 70px;
+    position: sticky;
+    z-index: 1;
+    right: 160px;
+    top: 120px;
+
+  }
+
+  .topBubble {
+    position: absolute;
+    z-Index: 1;
+    left: 0px;
+    top: 100px;
+    width: 70px;
+  }
+
+  .topGun {
+    position: absolute;
+    z-index: 1;
+    left: 270px;
+    top: 160px;
+    width: 130px;
+  }
+
+  .topPill {
+    display: none;
+  }
+
+  .button {
+
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+
+    position: absolute;
+    left: 20px;
+    bottom: 420px;
+  }
+
+  .watchNow {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+  }
+
+  .paragraph {
+    font-family: myFont;
+    color: #14D9E5;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    width: 240px;
+    text-align: start;
+    position: absolute;
+    right: 120px;
+    bottom: 470px;
+
+  }
+
+  .viewAll {
+
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    bottom: 335px;
+    font-size: 8px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 80px;
+    height: 22px;
+
+  }
+
+  .castHome {
+
+    margin-top: -100px;
+
+
+  }
+
+  .meetCast {
+    position: absolute;
+    right: 90px;
+    margin-top: -150px;
+    margin-left: -90px;
+    font-size: 25px;
+
+  }
+
+  .largeBox {
+    width: 20%;
+    height: 135px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+  }
+
+
+
+  .swiper {
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+
+  .imageBox {
+    width: 400px;
+    height: 400px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(135deg, #15BFFD, #84F729);
+    border-image-slice: 1;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+
+
+  }
+
+  .charImage {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+
+  .charName {
+    font-weight: 500;
+    font-size: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -1px;
+    width: 250px;
+    height: 16px;
+  }
+
+
+
+
+
 }

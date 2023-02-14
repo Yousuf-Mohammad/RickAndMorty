@@ -16,14 +16,12 @@ const TheCast = () => {
 
 
     return (
-        <div style={{ marginTop: '-100px' }} >
+        <div className='castHome'>
+            <Link className='viewAll' to={'/theCast'}>View all</Link>
+            <h1 className='meetText'>Meet The Cast</h1>
 
-            <h1>Meet The Cast</h1>
-            <Link to={'/theCast'}>
-                <button> View all</button>
-            </Link>
 
-            <Swiper
+            <Swiper className='swiper'
 
 
 
@@ -34,21 +32,14 @@ const TheCast = () => {
 
                 breakpoints={{
                     "@0.00": {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
-                    "@0.75": {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    "@1.00": {
                         slidesPerView: 2,
                         spaceBetween: 10,
                     },
+
                     "@1.50": {
                         slidesPerView: 5,
-                        spaceBetween: 10,
-                    },
+                        spaceBetween: 40,
+                    }
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
@@ -57,14 +48,14 @@ const TheCast = () => {
 
 
                     characters.slice(0, 8).map(char =>
-                        <SwiperSlide key={char.id} className="charBox">
-                            <img src={char.image} alt="" />
-                            <h1>{char.name}</h1>
+                        <SwiperSlide key={char.id} className="largeBox" >
+                            <img className='charImage' src={char.image} alt="" />
+                            <p className='charName'>{char.name}</p>
                         </SwiperSlide>)
 
                 }
             </Swiper>
-        </div>
+        </div >
     );
 }
 

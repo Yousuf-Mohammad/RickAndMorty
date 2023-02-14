@@ -6,6 +6,8 @@ import CastPage from './components/CastPage';
 import Home from './components/Home';
 import IndividualCast from './components/IndividualCast';
 
+
+
 function App() {
   return (
     <div className="App">

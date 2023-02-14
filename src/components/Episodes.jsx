@@ -11,13 +11,11 @@ const Episodes = () => {
     }, [])
 
     return (
-        <div>
+        <div className='episodeHome'>
+            <h1 style={{ textAlign: 'start' }} >Episodes</h1>
             <Swiper
 
-
-
-
-
+                className='swiper'
                 loop={false}
                 loopFillGroupWithBlank={false}
 
@@ -46,10 +44,10 @@ const Episodes = () => {
 
 
                     episodes.slice(0, 8).map(episode =>
-                        <SwiperSlide key={episode.id} className="charBox">
+                        <SwiperSlide key={episode.id} className="smallBox">
                             <p>{episode.episode}</p>
 
-                            <h1>{episode.name}</h1>
+                            <h5>{episode.name}</h5>
                         </SwiperSlide>)
 
                 }

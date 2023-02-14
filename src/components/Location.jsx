@@ -12,10 +12,12 @@ const Location = () => {
 
     return (
 
-        <div>
+
+        <div style={{ height: '300px' }}>
+            <h1 style={{ textAlign: 'start' }}>Location</h1>
             <Swiper
 
-
+                className='swiper'
 
 
 
@@ -47,9 +49,9 @@ const Location = () => {
 
 
                     location.slice(0, 8).map(loc =>
-                        <SwiperSlide key={loc.id} className="charBox">
+                        <SwiperSlide key={loc.id} className="smallerBox">
 
-                            <h1>{loc.name}</h1>
+                            <h4>{loc.name}</h4>
                         </SwiperSlide>)
 
                 }
